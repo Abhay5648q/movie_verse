@@ -31,11 +31,11 @@ class DetailsScreen extends StatelessWidget {
         child: Column(
           children: [
          Hero(
-  tag: show.id.toString(), // ✅ SAFE
+  tag: show.id.toString(), 
   child: Image.network(
     show.image?.isNotEmpty == true
         ? show.image!
-        : 'https://via.placeholder.com/300x400', // ✅ fallback
+        : 'https://via.placeholder.com/300x400', 
     fit: BoxFit.cover,
     errorBuilder: (_, __, ___) =>
         const Icon(Icons.broken_image, size: 100),

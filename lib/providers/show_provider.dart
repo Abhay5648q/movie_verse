@@ -74,7 +74,7 @@ class ShowProvider extends ChangeNotifier {
   //search
 
  Future<void> searchShows(String query) async {
-  query = query.trim(); // ✅ ADD THIS
+  query = query.trim(); 
 
   if (query.isEmpty) {
     searchResults.clear();

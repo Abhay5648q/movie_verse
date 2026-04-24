@@ -27,7 +27,7 @@ class ShowCard extends StatelessWidget {
           height: width * 0.65,
           child: Stack(
             children: [
-              /// 🎬 CLEAN IMAGE (FULL)
+            
               Positioned.fill(
                 child: Hero(
                   tag: show.id.toString(),
@@ -40,7 +40,7 @@ class ShowCard extends StatelessWidget {
                 ),
               ),
 
-              /// 🪟 BOTTOM TRANSPARENT PANEL
+             
               Positioned(
                 left: 0,
                 right: 0,
@@ -58,7 +58,7 @@ class ShowCard extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      /// 📝 TITLE
+                     
                       Text(
                         show.name.isNotEmpty ? show.name : "No Title",
                         maxLines: 2,
